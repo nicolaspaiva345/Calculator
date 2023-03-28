@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto Mono', monospace;
+}
+
+body{
+    background-color: rgb(0, 255, 183);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 3em;
+
+}
+
+#conteiner{
+    width: 400px;
+    padding: 0.5em;
+    background-color: rgb(0, 0, 0);
+    color: rgb(0, 0, 0);
+    display: flex;
+    flex-direction: column;
+    border-radius: 0px;
+    box-shadow: 5px 5px 43px black;
+    box-shadow: -5px -5px 43px black;
+}
+
+#conteiner > h3 {
+    font-size: 0.8em;
+    font-weight: 300;
+    color: rgb(255, 255, 255);
+}
+
+#operacionais {
+    text-align: right;
+}
+
+#previus {
+    color: rgb(255, 255, 255);
+    padding: 0.2rem;
+    overflow-wrap: break-word;
+    min-height: 1.6em;
+}
+
+#result{
+    font-size: 3em;
+    font-weight: 700;
+    overflow-wrap: break-word;
+    min-height: 1.6em;
+    padding: 0.2em;
+    color: rgb(106, 100, 100);
+}
+
+#buttons-conteiner{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 3px;
+}
+
+#buttons-conteiner > button {
+    border: 1px solid transparent;
+    border-radius: 0;
+    height: 4em;
+    font-size: 1.2em;
+    background-color: rgb(1, 102, 74);
+    cursor: pointer;
+}
+
+#buttons-conteiner > .number {
+    background-color: rgb(0, 255, 183);
+}
+
+#buttons-conteiner > button:hover{
+    background-color: rgb(1, 102, 74);
+}
+
+#buttons-conteiner > #equal {
+    grid-column: span 2;
+    background-color: rgb(194, 87, 240);
+}
+
+#buttons-conteiner > #equal:hover{
+    background-color: rgb(1, 102, 74);
+}
